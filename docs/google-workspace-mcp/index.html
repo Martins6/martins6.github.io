@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Workspace MCP</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 720px; margin: 3rem auto; padding: 0 1.25rem; }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  .sub { opacity: .75; margin-top: 0; }
+  code { background: rgba(127,127,127,.15); padding: .1em .35em; border-radius: 4px; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(127,127,127,.3);
+           font-size: .9rem; opacity: .8; }
+  a { color: #2563eb; }
+</style>
+</head>
+<body>
+  <h1>Google Workspace MCP</h1>
+  <p class="sub">A local Model Context Protocol server for Gmail, Google Calendar and Google Drive.</p>
+
+  <p>
+    Google Workspace MCP is an open-source, single-file MCP server that lets an AI agent
+    read and act on a user's own Google Workspace data through the
+    <a href="https://github.com/googleworkspace/cli">Google Workspace CLI</a> (<code>gws</code>).
+    It runs entirely on the user's machine over stdio, uses the user's own OAuth client,
+    and stores OAuth refresh tokens locally.
+  </p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Calendar: list calendars, upcoming agenda, create and delete events.</li>
+    <li>Gmail: search and read messages, send mail or save drafts.</li>
+    <li>Drive: search files, upload files into a single configured folder.</li>
+    <li>Multiple accounts, each with an enforced capability list.</li>
+  </ul>
+
+  <h2>Source code</h2>
+  <p>
+    The source, documentation and security notes are at
+    <a href="https://github.com/Martins6/google-workspace-mcp">github.com/Martins6/google-workspace-mcp</a>.
+  </p>
+
+  <h2>Privacy</h2>
+  <p>
+    The app accesses Google user data only when the user invokes a tool, keeps OAuth
+    credentials on the local machine, and sends no telemetry. Read the full
+    <a href="./privacy.html">Privacy Policy</a>.
+  </p>
+
+  <footer>
+    Unofficial project. Not affiliated with, endorsed by, or supported by Google LLC.
+    Google Workspace, Gmail, Google Calendar and Google Drive are trademarks of Google LLC.
+    Licensed under the MIT License.
+  </footer>
+</body>
+</html>
